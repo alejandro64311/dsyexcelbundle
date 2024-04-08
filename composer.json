@@ -1,0 +1,14 @@
+{
+    "name": "dsarhoya/dsy-xls-bundle",
+    "autoload": {
+        "psr-0" : {
+            "dsarhoya\\DSYXLSBundle" : ""
+        }
+    },
+    "description": "Bundle for import and export XLS files",
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.9.0",
+        "box/spout": "^3.0"
+    },
+    "target-dir": "dsarhoya/DSYXLSBundle"
+}

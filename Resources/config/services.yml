@@ -1,0 +1,10 @@
+parameters:
+    excel_service.class: dsarhoya\DSYXLSBundle\Services\ExcelService
+    phpexcel.class:  dsarhoya\DSYXLSBundle\XLS\Factory
+
+services:
+    dsarhoya.xls:
+        class: '%excel_service.class%'
+        arguments: ["@doctrine.orm.entity_manager", "@phpexcel", "@validator"]
+    phpexcel:
+        class: '%phpexcel.class%'
